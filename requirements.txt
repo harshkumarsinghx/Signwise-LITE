@@ -1,0 +1,9 @@
+opencv-python-headless
+mediapipe
+numpy
+scikit-learn
+pandas
+fastapi
+uvicorn
+python-multipart
+websockets

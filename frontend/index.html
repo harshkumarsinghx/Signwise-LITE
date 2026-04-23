@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignWise Lite | Real-Time ASL</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <div class="logo">
+                <span class="gradient-text">SignWise</span> Lite
+            </div>
+            <p class="subtitle">Real-time Hand Gesture Recognition</p>
+        </header>
+
+        <main class="main-content">
+            <div class="video-container glass-panel">
+                <video id="videoElement" autoplay playsinline></video>
+                <canvas id="canvasElement" style="display:none;"></canvas>
+                <div class="overlay" id="overlay">
+                    <div class="status-dot"></div>
+                    <span id="connectionStatus">Connecting...</span>
+                </div>
+            </div>
+
+            <div class="prediction-panel glass-panel">
+                <h2>Prediction</h2>
+                <div class="prediction-display">
+                    <span id="predictionLabel" class="prediction-text">--</span>
+                </div>
+                <div class="confidence-display">
+                    <span>Confidence:</span>
+                    <span id="confidenceValue" class="confidence-value">0%</span>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            Powered by MediaPipe & Scikit-Learn • Fast & Secure
+        </footer>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>
