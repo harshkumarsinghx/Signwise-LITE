@@ -37,3 +37,9 @@ If you ever want to retrain the model on new data, simply run:
 python train_model.py
 ```
 This will overwrite `model.pkl`. The backend will use the newly trained model on its next startup.
+
+#Screenshots(LOCAL)
+<img width="1918" height="867" alt="Screenshot 2026-04-25 193824" src="https://github.com/user-attachments/assets/ac627426-362d-4872-90f6-38b3b4a745cf" />
+<img width="525" height="708" alt="Screenshot 2026-04-25 195057" src="https://github.com/user-attachments/assets/28291bbe-9583-4456-a1ab-d2fda9240356" />
+<img width="461" height="138" alt="Screenshot 2026-04-25 195046" src="https://github.com/user-attachments/assets/8338ca7a-4b52-40ef-931c-fa34d52b1c29" />
+
