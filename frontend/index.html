@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SignWise Lite | Real-Time ASL</title>
-    <link rel="stylesheet" href="/static/style.css">
+    <meta name="description" content="Real-time American Sign Language recognition powered by MediaPipe and Scikit-Learn.">
+    <link rel="stylesheet" href="/static/style.css?v=2">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -18,8 +19,12 @@
 
         <main class="main-content">
             <div class="video-container glass-panel">
+                <!-- Hidden video: provides the webcam stream only -->
                 <video id="videoElement" autoplay playsinline></video>
-                <canvas id="canvasElement" style="display:none;"></canvas>
+                <!-- Live canvas: renders mirrored video + hand skeleton -->
+                <canvas id="liveCanvas"></canvas>
+                <!-- Hidden canvas: captures raw (unmirrored) frames for the backend -->
+                <canvas id="captureCanvas" style="display:none;"></canvas>
                 <div class="overlay" id="overlay">
                     <div class="status-dot"></div>
                     <span id="connectionStatus">Connecting...</span>
@@ -39,9 +44,9 @@
         </main>
         
         <footer>
-            Powered by MediaPipe & Scikit-Learn • Fast & Secure
+            Powered by MediaPipe &amp; Scikit-Learn • Fast &amp; Secure
         </footer>
     </div>
-    <script src="/static/script.js"></script>
+    <script src="/static/script.js?v=2"></script>
 </body>
 </html>

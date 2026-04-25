@@ -91,11 +91,20 @@ header {
     min-height: 400px;
 }
 
+/* Video is hidden — only used as a stream source */
 #videoElement {
+    display: none;
+}
+
+/* Live canvas renders mirrored video + hand skeleton */
+#liveCanvas {
     width: 100%;
     border-radius: 12px;
-    transform: scaleX(-1); /* Mirror effect */
+    /* No CSS transform — mirroring is handled in canvas 2D API */
 }
+
+/* Remove old overlayCanvas rule if browser cached it */
+#overlayCanvas { display: none; }
 
 .overlay {
     position: absolute;
